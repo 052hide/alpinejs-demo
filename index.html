@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      .model {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .model__input {
+        width: 100%;
+        max-width: 400px;
+        height: 2rem;
+      }
+      .model__output {
+        width: 100%;
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <section x-data="{ value: 'Test' }" class="model">
+      <input x-model="value" type="text" class="model__input" />
+      <p x-text="value" class="model_output"></p>
+      <script
+        src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+        defer
+      ></script>
+    </section>
+  </body>
+</html>
